@@ -1,0 +1,447 @@
+/* Variables */
+:root {
+  --poppins-font: "Poppins", sans-serif;
+  --Belanosima-font: "Belanosima", sans-serif;
+  --black-color: #181823;
+  --white-color: #eff5f5;
+  --blue-color: #00425a;
+  --orange-color: #fc7300;
+  --green-color: #1f8a70;
+}
+
+/* Reseteo y establece el modelo de caja para todos los elementos y seudoelementos */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Desplazamiento suave por el documento*/
+html {
+  scroll-behavior: smooth;
+}
+
+/* Estilos generales para el cuerpo del documento */
+body {
+  font-family: var(--poppins-font);
+  color: var(--black-color);
+}
+
+/* Estilos generales para los títulos h2 */
+h2 {
+  font-size: 1.875rem;
+  text-align: center;
+  font-weight: 700;
+}
+
+/* Estilos generales para las listas */
+ul {
+  list-style: none;
+}
+
+/* Estilos generales para los enlaces */
+a {
+  text-decoration: none;
+}
+
+/* Estilos para el menú de navegación */
+.navbar {
+  font-size: 1rem;
+  background-color: #24262b;
+  padding-bottom: 0.625rem;
+}
+
+.main-nav {
+  display: none;
+}
+
+.logo {
+  font-family: var(--Belanosima-font);
+  color: var(--white-color);
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-top: 0.938rem;
+  margin-left: 1.25rem;
+}
+
+.nav-links {
+  color: var(--white-color);
+}
+
+.main-nav li {
+  text-align: center;
+  margin: 0.938rem auto;
+}
+
+.navbar-toggle {
+  position: absolute;
+  top: 0.6rem;
+  right: 1.25rem;
+  cursor: pointer;
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+.active {
+  display: block;
+}
+
+/* Estilos para el hero (Imagen grande)*/
+.hero {
+  width: 100%;
+  height: 512px;
+
+  background-image: url("../assets/img/estudiantes_escuela.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #181823c9;
+  background-blend-mode: darken;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-title {
+  font-family: var(--Belanosima-font);
+  color: var(--white-color);
+  padding-bottom: 1.875rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Estilos para la sección Quienes somos y ¿Por qué elegirnos?*/
+.about,
+.choose {
+  padding: 3.5rem 1.5rem 1.5rem;
+}
+
+.about {
+  background-color: var(--white-color);
+}
+
+.choose-container,
+.about-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
+  padding: 1rem;
+  gap: 1.563rem;
+}
+
+.about-img,
+.choose-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.text-item {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding-bottom: 1.25rem;
+}
+
+/* Estilos para la sección Propuesta educativa */
+.services {
+  background-color: var(--white-color);
+  padding: 1.75rem 1.25rem;
+}
+
+.services-container {
+  padding: 1.25rem;
+}
+
+.services-text {
+  text-align: center;
+  font-size: 1.25rem;
+  margin: 2rem auto 3.75rem;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 3.75rem;
+}
+
+.card {
+  width: 100%;
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 3.125rem;
+  color: var(--green-color);
+  margin-bottom: 0.625rem;
+  display: block;
+}
+
+.card-title {
+  font-size: 0.938rem;
+  line-height: 1.4;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+
+.card-text {
+  font-size: 0.938rem;
+  text-align: left;
+}
+
+/* Estilos para la sección Últimas noticias */
+.news {
+  padding: 2.75rem 1.25rem;
+}
+
+.news-container {
+  padding: 1.25rem;
+}
+
+.news-title {
+  font-size: 2rem; /* 32px */
+  line-height: 1.4;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.newscard-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card-image {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.newscard {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  min-width: 150px;
+  overflow: hidden;
+  box-shadow: 0 0.1rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 1rem;
+}
+
+.newscard-body {
+  padding: 1rem 1rem 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tag {
+  align-self: flex-start;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  border-style: solid;
+  border-color: var(--black-color);
+  font-size: 0.75rem;
+  background: var(--black-color);
+  color: var(--white-color);
+}
+
+.newscard-body h4 {
+  font-size: 1.25rem; /* 20px */
+  text-transform: capitalize;
+}
+
+.newscard-footer {
+  display: flex;
+  padding: 1rem;
+  margin-top: auto;
+}
+
+.user {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.user-image {
+  border-radius: 50%;
+  background-color: #1f8a6f7a;
+}
+
+.user-info > small {
+  color: #181823bd;
+}
+
+/* Estilos para el efecto de escala en los banners */
+.newscard:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+/* Boton para volcar al inicio */
+#back-to-top-btn {
+  display: none;
+  position: fixed;
+  bottom: 0.375rem;
+  right: 0.375rem;
+  font-size: 1.125;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  outline: none;
+  border: 0.188rem solid #333;
+  border-radius: 50%;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+  transition-property: background-color, color;
+}
+
+#back-to-top-btn:hover,
+#back-to-top-btn:focus {
+  background-color: var(--black-color);
+  color: var(--white-color);
+}
+
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+/* Animaciones para el boton inicio */
+.btnEntrance {
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-name: btnEntrance;
+}
+
+@keyframes btnEntrance {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.btnExit {
+  animation-duration: 0.25s;
+  animation-fill-mode: both;
+  animation-name: btnExit;
+}
+
+@keyframes btnExit {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translate3d(0, 100%, 0);
+  }
+}
+
+/* Media query responsive */
+@media (min-width: 460px) {
+  /* Tablets */
+  .hero-title {
+    font-size: 2.313rem;
+  }
+
+  h2 {
+    font-size: 2.188rem;
+  }
+
+  #back-to-top-btn {
+    font-size: 1.375rem;
+    width: 40px;
+    height: 40px;
+    bottom: 0.938rem;
+    right: 0.938rem;
+  }
+}
+
+@media (min-width: 768px) {
+  /* Laptop */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 1.875rem;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 2rem;
+  }
+
+  .logo {
+    margin-top: 0;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .nav-links:hover {
+    color: var(--green-color);
+  }
+
+  .hero-title {
+    font-size: 2.875rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-container,
+  .choose-container {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .about-img,
+  .choose-img {
+    padding-top: 0.625rem;
+    min-width: 40%;
+    width: 100%;
+    height: 50%;
+  }
+
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 3.125rem;
+  }
+
+  .newscard-container {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #back-to-top-btn {
+    bottom: 1.25rem;
+    right: 1.25rem;
+    font-size: 1.625rem;
+    width: 50px;
+    height: 50px;
+  }
+}

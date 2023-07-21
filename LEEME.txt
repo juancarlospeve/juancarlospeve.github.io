@@ -1,0 +1,10 @@
+- PROYECTO INTEGRADOR PARA ARGENTINA PROGRAMA (UNTERF)
+
+Trabajo integrador realizado para el curso "Desarrollador Frontend" de Argentina Programa 4.0
+
+Este es mi primer proyecto que completo aplicando en conjunto todo lo visto durante la primera etapa de la cursada. Tengo sentimentos encontrados por un lado fue muy entretenido simular que era un encargo para una institución de estudios, además de diseñar una página de 0 e ir probando como iban quedando las cosas en su lugar, por otro lado fue un poco estresante cuando las cosas no salían, pero eso me ayudo mucho a investigar y aprender nuevas herramientas, es increible la cantidad de videos que hay en youtube con explicaciones, ejemplos. Por supuesto que tambien le pedí algo de ayuda a San ChatGPT, pero hay que saberlo usar realizando solo preguntas específicas y cortas.
+
+Para ser honesto estoy conforme con el desarrollo de la página, se que le faltan muchas cosas por mejorar, hay cosas que me tomaron algo de tiempo debido que había que aplicar javascript, mi código de css le falta mucho por mejorar y me repito por todos lados.
+
+Para terminar quiero agradecar a los profesores y tutores de la cursada, siempre están disponibles para responder cualquier duda, los materiales, las herramientas y los ejercicios fueron de mucha ayuda , sin mencionar las clases en vivo. Se pasan super rápido. Le ponen una garra terrible. Muchas gracias por todo.
+

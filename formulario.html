@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Etiquetas meta -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="title"
+      content="Unterf School | Educación Primaria de Calidad"
+    />
+    <meta
+      name="description"
+      content="Bienvenid@ a Unterf School, donde ofrecemos una educación primaria de calidad para el desarrollo integral de los estudiantes. Nuestro enfoque educativo promueve el crecimiento académico y personal. ¡Conoce más sobre nuestra comunidad educativa!"
+    />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Educación, Primaria, Calidad, Tecnología"
+    />
+    <meta name="author" content="Juan Carlos Pevé" />
+    <meta name="copyright" content="Propietario del copyright" />
+    <!-- Google Fonts para Belanosima y Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Belanosima:wght@400;700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/bc080c1b0b.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Favicon -->
+    <link rel="icon" href="./assets/icon/favicon.png" type="image/x-icon" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/formulario.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <!-- Título de la página -->
+    <title>Unterf School | Educación Primaria de Calidad</title>
+  </head>
+  <body>
+    <header>
+      <nav class="nav-form">
+        <ul>
+          <li><a href="./index.html" class="nav-links">Volver</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <div class="form-contiainer">
+        <div class="form">
+          <!-- Colocar correo electronico para recibir información (formsubmit) -->
+          <form
+            action="https://formsubmit.co/cizanohe@mailgolem.com"
+            method="post"
+          >
+            <h1>Contacto</h1>
+            <h3>Escríbenos y en breve nos pondremos en contacto con usted</h3>
+            <label for="name">Nombre<span class="mandatory"> *</span></label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              required
+              placeholder="Escriba su nombre"
+              minlength="3"
+              maxlength="20"
+            />
+            <label for="last-name"
+              >Apellido<span class="mandatory"> *</span></label
+            >
+            <input
+              type="text"
+              name="last-name"
+              id="last-name"
+              required
+              placeholder="Escriba su apellido"
+              minlength="3"
+              maxlength="20"
+            />
+            <label for="email">Email<span class="mandatory"> *</span></label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              required
+              placeholder="Escriba su correo electrónico"
+              pattern="^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)+$"
+            />
+            <label for="tel" class="colocar_telefono">Teléfono</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Escriba su teléfono"
+              pattern="/(\(?\d{3}\)?[- .]?\d{4}[- .]?\d\d\d\d)|(\(?\d{4}\)?[- .]?\d{3}[- .]?\d\d\d\d)|(\(?\d{5}\)?[- .]?\d{2}[- .]?\d\d\d\d)/"
+              title="Ingrese un número de telefono o de celular válido"
+            />
+            <label for="subject">Asunto<span class="mandatory"> *</span></label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              required
+              placeholder="Escriba su asunto"
+              minlength="5"
+              maxlength="50"
+            />
+            <label for="message"
+              >Mensaje<span class="mandatory"> *</span></label
+            >
+            <textarea
+              name="message"
+              class="message"
+              id="message"
+              required
+              placeholder="Deje aquí su comentario..."
+              minlength="5"
+              maxlength="400"
+            ></textarea>
+            <div class="form-buttons">
+              <button type="submit" name="send-form" class="submit">
+                <p>Enviar</p>
+              </button>
+              <button type="reset" name="reset-form" class="reset">
+                <p>Borrar</p>
+              </button>
+            </div>
+            <p>
+              <span class="mandatory"> * </span>los campos son obligatorios.
+            </p>
+            <input type="hidden" name="_template" value="table" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_next" value="./index.html" />
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section class="footer">
+        <div class="row">
+          <div class="footer-col">
+            <h4 class="footer-title">Redes sociales</h4>
+            <div class="social-links">
+              <a href="javascript:void(0)"><i class="fab fa-facebook-f"></i></a>
+              <a href="javascript:void(0)"><i class="fab fa-twitter"></i></a>
+              <a href="javascript:void(0)"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+          <div class="footer-col" id="footer-middle">
+            <h4 class="footer-title">Instituto</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.5237810682124!2d-58.567093525003415!3d-34.6162017581563!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb81a164026d9%3A0xecaed6471702c6c8!2s3%20de%20Febrero%2C%20Caseros%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1689899743874!5m2!1ses-419!2sar"
+              width="70%"
+              height="80%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div class="footer-col">
+            <h4 class="footer-title">Contacto</h4>
+            <ul>
+              <li>
+                <a href="javascript:void(0)"
+                  ><i class="fa-solid fa-envelope"></i
+                  >unterfschool@correo.com</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  ><i class="fa-solid fa-phone"></i>11 222 3333</a
+                >
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  ><i class="fa-brands fa-whatsapp"></i>11 222 3344</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="copyright">
+        <p>Desarrollado por Juan Carlos Pevé</p>
+      </section>
+    </footer>
+  </body>
+</html>

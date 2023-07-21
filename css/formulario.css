@@ -1,0 +1,185 @@
+/* Variables */
+:root {
+  --poppins-font: "Poppins", sans-serif;
+  --black-color: #181823;
+  --white-color: #eff5f5;
+  --blue-color: #00425a;
+  --orange-color: #fc7300;
+  --green-color: #1f8a70;
+}
+
+/* Reseteo y establece el modelo de caja para todos los elementos y seudoelementos */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Esttilos generales para el cuerpo del documento */
+body {
+  font-family: var(--poppins-font);
+  color: var(--black-color);
+  background-color: var(--white-color);
+}
+
+/* Estilos generales para los títulos h1 */
+h1 {
+  font-size: 1.875rem;
+  padding-bottom: 1.25rem;
+}
+
+/* Estilos generales para los títulos h3 */
+h3 {
+  font-size: 1rem;
+  padding-bottom: 1.875rem;
+}
+
+/* Estilos generales para los textos p */
+p {
+  font-size: 0.875rem;
+}
+
+/* Estilos generales para los enlaces */
+a {
+  text-decoration: none;
+}
+
+/*Estilos generales para el menú de navegación*/
+
+.nav-form {
+  font-size: 1rem;
+  background-color: #24262b;
+  padding-bottom: 0.625rem;
+  height: 70px;
+  padding-top: 22px;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.nav-form a {
+  margin-left: 40px;
+  color: var(--white-color);
+}
+
+.nav-links:hover {
+  color: var(--green-color);
+}
+
+/* Estilos para el forulario de contacto */
+.form-contiainer {
+  max-width: 470px;
+  height: auto;
+  margin: 4rem auto;
+  padding: 1.875rem 1.875rem 1.25rem;
+  background-color: var(--white-color);
+}
+
+/* Estilos generales para los input */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  border-radius: 0.313rem;
+  border: 0.063rem solid var(--black-color);
+  margin: 0.625rem auto 1.25rem;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+  height: 2.5rem;
+  padding-left: 0.625rem;
+}
+
+textarea {
+  height: 9.375rem;
+  padding: 0.938rem 0.625rem;
+  resize: none;
+}
+
+/* Estilos para los label */
+label {
+  display: block;
+  float: center;
+}
+
+/* Estilos Generales para los botones */
+.form-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 0.938rem;
+  margin: 1.25rem auto;
+}
+
+.submit,
+.reset {
+  height: 2.188rem;
+  width: 11.875rem;
+  border-color: transparent;
+  border-radius: 0.625rem;
+  color: white;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.reset {
+  background-color: #912b2b;
+}
+
+.submit {
+  background-color: #1f8a70;
+}
+
+.reset:hover {
+  background-color: #491717;
+}
+
+.submit:hover {
+  background-color: #0d421a;
+}
+
+/* Estilos generales para el esterisco*/
+.mandatory {
+  color: #833e07;
+}
+
+/* Estilos generales para el contenido de los input */
+::-webkit-input-placeholder {
+  font-family: var(--poppins-font);
+}
+
+*:focus::placeholder {
+  opacity: 0;
+}
+
+input:focus {
+  outline: 0;
+  border: 0.063rem solid #9e9e9e;
+}
+
+textarea:focus {
+  outline: 0;
+  border: 0.063rem solid #9e9e9e;
+}
+
+/* Media query responsive */
+@media (min-width: 460px) {
+  /* Tablets */
+}
+
+@media (min-width: 768px) {
+  /* Laptop */
+  body {
+    background-color: white;
+  }
+
+  .form-contiainer {
+    border-radius: 0.625rem;
+    box-shadow: 13px 9px 30px 5px rgba(181, 175, 181, 1);
+    transition: 1.5s;
+  }
+}
